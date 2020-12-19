@@ -27,8 +27,6 @@ def shuffle(order_list : list):
         order_list[pos_1] = order_list[pos_2]
         order_list[pos_2] = aux
 
-
-
 def exemplo():
     # Nivel of BTree (>=3)
     nivel = 4
@@ -46,7 +44,6 @@ def exemplo():
     for elem in list_elem:
         print(f'Insert : {elem}')
         b_tree = b_tree.insert(elem)
-        log_tree.append((elem, b_tree.str_list()))
 
     # Print BTree
     print(f'BTree(nivel = {b_tree.nivel})')
